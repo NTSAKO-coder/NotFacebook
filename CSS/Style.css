@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ----------- Navbar --------- */
+
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+nav{
+    background-color: #548b54;
+    display: flex;
+    justify-content: space-between;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    
+}
+.nav-options{
+    display: flex;
+    align-items: center;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+li{
+    cursor: pointer;
+    /* font-weight: bold; */
+    border-bottom: 2px solid yellow;
+    transition: border-bottom .9s;
+}
+
+@media only screen and (max-width: 700px){
+    .ul{
+        flex-direction: column;
+    }
+}
+
+.user-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile img{
+    border-radius: 50%;
+    border: 3px solid lightblue(10, 223, 242);
+}
+col
+.user-profile label{
+    font-size: 10px;
+}
+
+a{
+    color: black;
+
+
+}
+.ntsako{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1{
+    color: #548b54;
+}
+
+form{
+background-color: white;
+display: flex;
+text-align: center;
+flex-direction: column;
+height: 250px;
+padding: 20px;
+
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+}
+.input-box{
+    display: block;
+    flex-direction: column;
+    text-align: start;
+    height: 400px;
+    
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.slider {
+display: flex;
+gap: 15px; 
+overflow: hidden;
+width: 100%;
+height: 100%;
+border: 2px solid #ccc;
+border-radius: 10px;
+padding: 20px;
+text-decoration: none;
+
+}
+
+.profile {
+flex: 0 0 auto;
+text-align: center;
+width: 120px;
+}
+
+.profile img {
+width: 100px;
+height: 100px;
+object-fit: cover;
+border-radius: 8px;
+border: 1px solid #ddd;
+}
+
+.name {
+margin: 8px 0 4px;
+font-size: 14px;
+font-weight: bold;
+color: #333;
+text-decoration: none;
+}
+
+.follow-btn {
+padding: 5px 10px;
+font-size: 12px;
+background-color: #007BFF;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+
+}
+
+.follow-btn:hover {
+background-color: #0056b3;
+}
+
+.slider {
+    display: flex;
+    overflow: scroll;
+}
+
+
