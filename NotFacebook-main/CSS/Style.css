@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ----------- Navbar --------- */
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+nav {
+    background-color: #548b54;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+li {
+    cursor: pointer;
+    border-bottom: 2px solid yellow;
+    transition: border-bottom 0.9s;
+}
+
+@media only screen and (max-width: 700px) {
+    ul {
+        flex-direction: column;
+    }
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    border: 3px solid lightblue;
+}
+
+.user-profile label {
+    font-size: 10px;
+}
+
+a {
+    color: black;
+}
+
+.ntsako {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #548b54;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+textarea.input-box {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4267B2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.file-label i {
+    margin-right: 5px;
+}
+
+.file-label:hover {
+    background-color: #365899;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button i {
+    margin-right: 5px;
+}
+
+.submit-button:hover {
+    background-color: #36a420;
+}
+
+.slider {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.profile {
+    flex: 0 0 auto;
+    text-align: center;
+    width: 120px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.name {
+    margin: 8px 0 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.follow-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    background-color: #0056b3;
+}
+
+.slider {
+    display: flex;
+    overflow: scroll;
+}
+
+.post-profile {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group {
+    display: flex;
+    gap: 50px;
+}
+
+.input-box2 {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.post-profile {
+    margin-top: 1rem;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.username {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+._row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.post-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-like {
+    background-color: #4267B2;
+}
+
+.btn-like:hover {
+    background-color: #365899;
+}
+
+.btn-comment {
+    background-color: #42b72a;
+}
+
+.btn-comment:hover {
+    background-color: #36a420;
+}
+
+.btn-send {
+    background-color: #e7a33e;
+}
+
+.btn-send:hover {
+    background-color: #d69333;
+}
+
+.btn-share {
+    background-color: #f02849;
+}
+
+.btn-share:hover {
+    background-color: #c61d3f;
+}
+
+.like-count,
+.comment-count,
+.share-count {
+    font-weight: bold;
+}
+
+
+.notification-badge {
+    display: inline-block;
+    background-color: #ff4141;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    position: relative;
+    top: -8px;
+    left: 5px;
+}
+
+
+.nav-options ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-options ul li {
+    display: inline-block;
+}
+
+.nav-options ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+}
+
+.nav-options ul li a:hover {
+    color: #548b54;
+}
+
+.nav-options ul li i {
+    margin-right: 5px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-profile label {
+    font-size: 14px;
+    color: #333;
+}
+.poster{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
