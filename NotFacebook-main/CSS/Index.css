@@ -19,16 +19,16 @@ body {
     text-align: center;
     color: #070707;
 }
-.form-group {
+.form {
     margin-bottom: 15px;
 }
-.form-group label {
+.form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #070707;
 }
-.form-group input {
+.form input {
     width: 100%;
     padding: 10px;
     border: 2px solid #042404;
@@ -36,10 +36,10 @@ body {
     outline: none;
     font-size: 14px;
 }
-.form-group input:focus {
+.form input:focus {
     border-color: #052f14;
 }
-.form-group a {
+.form a {
     display: block;
     text-align: right;
     margin-top: 5px;
@@ -47,7 +47,7 @@ body {
     text-decoration: none;
     color: #033f11;
 }
-.form-group a:hover {
+.form a:hover {
     text-decoration: underline;
 }
 .btn {

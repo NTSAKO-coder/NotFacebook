@@ -19,16 +19,16 @@ body {
     text-align: center;
     color: #070707;
 }
-.form-group {
+.form {
     margin-bottom: 15px;
 }
-.form-group label {
+.form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #070707;
 }
-.form-group input {
+.form input {
     width: 100%;
     padding: 10px;
     border: 2px solid #08351c;
@@ -36,7 +36,7 @@ body {
     outline: none;
     font-size: 14px;
 }
-.form-group input:focus {
+.form input:focus {
     border-color: #042c0c;
 }
 .btn {
