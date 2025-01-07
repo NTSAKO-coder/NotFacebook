@@ -6,16 +6,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #033310;
+    background: darkgreen;
 }
-.login-container {
-    width: 300px;
+.register {
+    width: 350px;
     padding: 50px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-.login-container h1 {
+.register-container h1 {
     text-align: center;
     color: #070707;
 }
@@ -31,29 +31,18 @@ body {
 .form-group input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #042404;
+    border: 2px solid #08351c;
     border-radius: 5px;
     outline: none;
     font-size: 14px;
 }
 .form-group input:focus {
-    border-color: #052f14;
-}
-.form-group a {
-    display: block;
-    text-align: right;
-    margin-top: 5px;
-    font-size: 12px;
-    text-decoration: none;
-    color: #033f11;
-}
-.form-group a:hover {
-    text-decoration: underline;
+    border-color: #042c0c;
 }
 .btn {
     width: 100%;
     padding: 10px;
-    background-color: #032811;
+    background-color: #021f09;
     color: white;
     border: none;
     border-radius: 5px;
@@ -61,19 +50,22 @@ body {
     cursor: pointer;
 }
 .btn:hover {
-    background-color: #033310;
+    background-color: #031e09;
 }
-.register-link {
+.login-link {
     text-align: center;
     margin-top: 15px;
     font-size: 14px;
 }
-.register-link a {
-    color: #034119;
+.login-link a {
+    color: #3d18e4;
     text-decoration: none;
 }
-.register-link a:hover {
+.login-link a:hover {
     text-decoration: underline;
+}
+h1{
+    margin-left: 100px;  
 }
 h4{
     margin-left: 50px;
