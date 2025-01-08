@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #033310;
+    background-color: #4267B2;
 }
 .login-container {
     width: 300px;
@@ -53,12 +53,13 @@ body {
 .btn {
     width: 100%;
     padding: 10px;
-    background-color: #032811;
+    background-color: darkgreen;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    text-emphasis-color: darkgreen;
 }
 .btn:hover {
     background-color: #033310;

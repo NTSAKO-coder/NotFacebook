@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: darkgreen;
+    background-color: #4267B2;
 }
 .register {
     width: 350px;

@@ -1,0 +1,22 @@
+body{
+    background-image: url("https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?cs=srgb&dl=pexels-camcasey-1722183.jpg&fm=jpg");
+    background-color: rgb(29, 16, 140);
+
+}
+.SignIn-container h3, .h3{
+    text-shadow: blue;
+}
+.SignIn-container{
+    border: 1px solid blue;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    
+}
+.content{
+    align-items: center;
+}
+h3{
+  display: flex;
+}
