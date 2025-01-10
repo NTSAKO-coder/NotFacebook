@@ -1,22 +1,80 @@
 body{
-    background-image: url("https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?cs=srgb&dl=pexels-camcasey-1722183.jpg&fm=jpg");
-    background-color: rgb(29, 16, 140);
+
+    margin: 0;
+    padding: 0; 
+    
+   
 
 }
-.SignIn-container h3, .h3{
-    text-shadow: blue;
-}
-.SignIn-container{
-    border: 1px solid blue;
-    border-radius: 10px;
+
+.main{
+    background-image:  url( "https://images.unsplash.com/photo-1707077865701-2854996afc4f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZSUyMGJ1aWxkaW5nfGVufDB8fDB8fHww");
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: white;
-    text-align: center;
+    height: 100vh;
+    background-color: #09aa51;
+    background:linear-gradient( rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.5)100%),url( "https://images.unsplash.com/photo-1707077865701-2854996afc4f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZSUyMGJ1aWxkaW5nfGVufDB8fDB8fHww");
+    border: 1px solid #042404;
+    border-radius: 5px;
+    display: block;
+    font-weight: bold;
+    color: #070707;
+    
+   
+    
     
 }
-.content{
-    align-items: center;
+.SignIn-container{
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-image: url("https://images.unsplash.com/photo-1707077865701-2854996afc4f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZSUyMGJ1aWxkaW5nfGVufDB8fDB8fHww");
+    text-align: center;
+    justify-content: center;
+    padding: 100px; 
+    color: #09aa51;
+    margin-top: 100px;
+    
+    
 }
-h3{
-  display: flex;
+.btn-link a{
+    border-radius: 5px;
+    color: #09aa51;
+}
+.btn-link button{
+    background-color: #0e5385;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.btn-link button:hover{
+    background-color: aqua;
+}
+.block input{
+    border: 2px solid #08351c;
+    border-radius: 5px;
+    font-size: 14px;
+    
+    
+}
+.block label{
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    cursor:pointer;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+.checkbox{
+    display: block;
+    font-weight: bold;
+
+}
+a{
+    margin-bottom: 100px;
+}    
+.SignIn-container a{
+    margin-bottom:100px;
 }
