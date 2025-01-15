@@ -10,24 +10,24 @@
 <body>
     <nav>
         <div class="nav-options">
-            <img src="https://cdn.discordapp.com/attachments/1313483343781822525/1316679953412263947/image.png?ex=677e3443&is=677ce2c3&hm=7833ee2cd7b3643886f61aeb6d78694f3d161aca719b590c0f525bca90621245&" alt="Logo">
+            <img src="https://cdn.discordapp.com/attachments/1313483343781822525/1316679953412263947/image.png?ex=67881783&is=6786c603&hm=37cfc98128a8bb604bd17b1b5d235e606f09b68dc3c20986b8dbfa49a8673b8d&" alt="Logo">
     
             <ul>
                 <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                 <li>
                     <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/messages.html">
                         <i class="fas fa-envelope"></i> Messages 
-                      
+                        
                     </a>
                 </li>
-                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="http://127.0.0.1:5500/NotFacebook-main/HTML/About.html"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
                 <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
             </ul>
         </div>
         <div class="user-profile">
-            <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" alt="User Image" />
-            <label>Joe</label>
+            <img src="https://i.pinimg.com/474x/51/05/3b/51053bb26a41a8b7aadfd5ff4bdca72b.jpg" alt="User Image" />
+            <label>Ntsako</label>
         </div>
     </nav>
     
@@ -37,6 +37,7 @@
     </div>
     <form>
         <textarea class="input-box" placeholder="What's on your mind?"></textarea>
+        
     </form>
     <div class="buttons">
         <label for="file-input" class="file-label">
@@ -44,7 +45,7 @@
         </label>
         <input type="file" id="file-input" name="input-box" class="file-input">
         <button class="submit-button">
-            <i class="fas fa-paper-plane"></i> Submit
+            <i class="fas fa-paper-plane"></i> Post
         </button>
     </div>
 </div>
@@ -71,7 +72,7 @@
                 </div>
                 <div class="profile">
                     <img src="https://i.pinimg.com/474x/dd/27/cb/dd27cb7e0ce29028b051010626dab7e3.jpg" alt="Profile 5">
-                    <p class="name">Ntsako</p>
+                    <p class="name">Joy</p>
                     <button class="follow-btn">Follow</button>
                 </div>
                 <div class="profile">
@@ -94,6 +95,11 @@
                     <p class="name">Lucky</p>
                     <button class="follow-btn">Follow</button>
                 </div>
+                <div class="profile">
+                    <img src="https://i.pinimg.com/474x/1e/b5/5f/1eb55f0ba39fea71db823d8685c2b9e9.jpg">
+                    <p class="name">Precious</p>
+                    <button class="follow-btn">Follow</button>
+                </div>
         <div class="profile">
             <img src="https://i.pinimg.com/474x/18/30/9c/18309c8fa46249bd8c88173661a829ca.jpg" alt="Profile 10">
             <p class="name">Brave</p>
@@ -108,7 +114,7 @@
 <div class="post-profile">
     <div class="_row" row="12">
         <di>
-        <img src="https://i.pinimg.com/474x/18/30/9c/18309c8fa46249bd8c88173661a829ca.jpg" alt="Avatar" class="avatar">
+        <img src="https://i.pinimg.com/474x/c5/4e/70/c54e704c3365cf7b4610b63c186ebfca.jpg" class="avatar">
         <h4 class="username">Brave</h4>
         </di>
 
@@ -134,22 +140,25 @@
 
     <div class="btn-group mt-4">
         <button type="button" class="btn btn-like">
-            <i class="fas fa-thumbs-up"></i> Likes <span class="like-count">40</span>
+            <i class="fas fa-thumbs-up"></i> Likes <span class="like-count"></span>
         </button>
         <button type="button" class="btn btn-comment">
-            <i class="fas fa-comment"></i> Comments <span class="comment-count">70</span>
+            <i class="fas fa-comment"></i> Comments <span class="comment-count"></span>
         </button>
         <button type="button" class="btn btn-send">
             <i class="fas fa-paper-plane"></i> Send
         </button>
         <button type="button" class="btn btn-share">
-            <i class="fas fa-share"></i> Share <span class="share-count">15</span>
+            <i class="fas fa-share"></i> Share <span class="share-count"></span>
         </button>
     </div>
 </div>
 
 </div>
 
-
+<script src="../JS/Followbtn.js">
+    
+</script>
+<script src="../JS/post.js"></script>
 </body>
 </html>

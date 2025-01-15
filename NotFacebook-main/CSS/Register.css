@@ -38,7 +38,7 @@ body {
 .form input:focus {
     border-color: #042c0c;
 }
-.btn {
+#registerBtn {
     width: 100%;
     padding: 10px;
     background-color: #021f09;
