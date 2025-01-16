@@ -10,24 +10,24 @@
 <body>
     <nav>
         <div class="nav-options">
-            <img src="https://cdn.discordapp.com/attachments/1313483343781822525/1316679953412263947/image.png?ex=67881783&is=6786c603&hm=37cfc98128a8bb604bd17b1b5d235e606f09b68dc3c20986b8dbfa49a8673b8d&" alt="Logo">
+            <img src="https://cdn.discordapp.com/attachments/1313483343781822525/1316679953412263947/image.png?ex=678a11c3&is=6788c043&hm=ae9a030b75c5bd0f6f2b8f099fdfb04cfca1fc8a9f2e4cbf719585524c476949&" alt="Logo">
     
-            <ul>
-                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                <li>
-                    <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/messages.html">
-                        <i class="fas fa-envelope"></i> Messages 
-                        
-                    </a>
-                </li>
-                <li><a href="http://127.0.0.1:5500/NotFacebook-main/HTML/About.html"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
-                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-            </ul>
+            <div>
+                <label class="dropdown-label">
+                    Select
+                    <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/messages.html" target="_blank">Messages</a>
+                    <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/About.html" target="_blank">About</a>
+                    <a href="https://example.com/option3" target="_blank">Logout</a>
+                    </div>
+                </label>
+                
+            </div>
         </div>
         <div class="user-profile">
-            <img src="https://i.pinimg.com/474x/51/05/3b/51053bb26a41a8b7aadfd5ff4bdca72b.jpg" alt="User Image" />
-            <label>Ntsako</label>
+            <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/UserProfile.html" target="_blank"></a>
+            <img src="https://i.pinimg.com/474x/51/05/3b/51053bb26a41a8b7aadfd5ff4bdca72b.jpg" alt="User Image"/>
+            <label> </a>Queen</label>
         </div>
     </nav>
     
@@ -140,25 +140,21 @@
 
     <div class="btn-group mt-4">
         <button type="button" class="btn btn-like">
-            <i class="fas fa-thumbs-up"></i> Likes <span class="like-count"></span>
+            <i class="fas fa-thumbs-up" id="LikeCount"></i> Likes <span class="like-count"></span>
         </button>
         <button type="button" class="btn btn-comment">
-            <i class="fas fa-comment"></i> Comments <span class="comment-count"></span>
-        </button>
-        <button type="button" class="btn btn-send">
-            <i class="fas fa-paper-plane"></i> Send
+            <i class="fas fa-comment" id="CommentIcon"></i> Comments <span class="comment-count"></span>
         </button>
         <button type="button" class="btn btn-share">
-            <i class="fas fa-share"></i> Share <span class="share-count"></span>
+            <i class="fas fa-share" id="ShareIcon"></i> Share <span class="share-count"></span>
         </button>
     </div>
 </div>
 
 </div>
 
-<script src="../JS/Followbtn.js">
-    
-</script>
-<script src="../JS/post.js"></script>
+<script src="../JS/Followbtn.js" defer></script>
+<script src="../JS/post.js" defer></script>
+<script src="../JS/LCS.js" defer></script>
 </body>
 </html>
