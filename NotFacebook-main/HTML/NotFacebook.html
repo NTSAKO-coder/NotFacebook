@@ -10,23 +10,30 @@
 <body>
     <nav>
         <div class="nav-options">
-            <img src="https://cdn.discordapp.com/attachments/1313483343781822525/1316679953412263947/image.png?ex=678a11c3&is=6788c043&hm=ae9a030b75c5bd0f6f2b8f099fdfb04cfca1fc8a9f2e4cbf719585524c476949&" alt="Logo">
+            <img src="/RESOURCES/image.png" alt="Logo">
     
             <div>
-                <label class="dropdown-label">
-                    Select
-                    <div class="dropdown-content">
-                    <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/messages.html" target="_blank">Messages</a>
-                    <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/About.html" target="_blank">About</a>
-                    <a href="https://example.com/option3" target="_blank">Logout</a>
-                    </div>
-                </label>
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav id="menu" class="hidden">
+                    <ul>
+                        <ul>
+                            <li><a href="http://127.0.0.1:5500/NotFacebook-main/HTML/About.html"><i class="fas fa-info-circle">About</i></a></li>
+                            <li><a href="http://127.0.0.1:5500/NotFacebook-main/HTML/messages.html"><i class="fas fa-envelope">Messages</i></a></li>
+                            <li><a href="http://127.0.0.1:5500/NotFacebook-main/HTML/Contact.html"><i class="fas fa-address-book">Contacts</i></a></li>
+                            <li><a href="http://127.0.0.1:5500/NotFacebook-main/HTML/Login.html"><i class="fas fa-sign-out-alt">Logout</i></a></li>
+                        </ul>
+                    </ul>
+                </nav>
                 
             </div>
         </div>
         <div class="user-profile">
             <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/UserProfile.html" target="_blank"></a>
-            <img src="https://i.pinimg.com/474x/51/05/3b/51053bb26a41a8b7aadfd5ff4bdca72b.jpg" alt="User Image"/>
+            <img src="https://i.pinimg.com/474x/c3/e3/47/c3e347ae7ab989e383dcf6570bcf1ba8.jpg" alt="User Image"/>
             <label> </a>Queen</label>
         </div>
     </nav>
@@ -34,6 +41,9 @@
 <div class="ntsako">
     <div>
         <h1>Create Post</h1>
+        <a href="http://127.0.0.1:5500/NotFacebook-main/HTML/UserProfile.html" target="_blank"></a>
+            <img src="https://i.pinimg.com/474x/c3/e3/47/c3e347ae7ab989e383dcf6570bcf1ba8.jpg" alt="User Image"/>
+            <b></a>Queen</b>
     </div>
     <form>
         <textarea class="input-box" placeholder="What's on your mind?"></textarea>
@@ -117,44 +127,37 @@
         <img src="https://i.pinimg.com/474x/c5/4e/70/c54e704c3365cf7b4610b63c186ebfca.jpg" class="avatar">
         <h4 class="username">Brave</h4>
         </di>
+    </div>
 
-        <div col="6">
+    <div class="post">
 
-        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        <div class="post-content">
+        
+            <p class="post-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         </div>
-
-    </div>
-
     
-
-<div class="post">
-
-    <div class="post-content">
+        <div class="poster">
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/87/40/infographic-business-report-with-lorem-ipsum-vector-24168740.jpg" alt="pie chat">
+        </div>
     
-        <p class="post-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <div class="btn-group mt-4">
+            <button type="button" class="btn btn-like" onclick="updateLikeCount()">
+                <i class="fas fa-thumbs-up"></i> Likes <span class="like-count"></span>
+            </button>
+
+            <button type="button" class="btn btn-share" onclick="updateShareCount()">
+                <i class="fas fa-share"></i> Share <span class="share-count"></span>
+            </button>
+        </div>
+    </div>
+    
     </div>
 
-    <div class="poster">
-        <img src="https://cdn1.vectorstock.com/i/1000x1000/87/40/infographic-business-report-with-lorem-ipsum-vector-24168740.jpg" alt="pie chat">
-    </div>
-
-    <div class="btn-group mt-4">
-        <button type="button" class="btn btn-like">
-            <i class="fas fa-thumbs-up" id="LikeCount"></i> Likes <span class="like-count"></span>
-        </button>
-        <button type="button" class="btn btn-comment">
-            <i class="fas fa-comment" id="CommentIcon"></i> Comments <span class="comment-count"></span>
-        </button>
-        <button type="button" class="btn btn-share">
-            <i class="fas fa-share" id="ShareIcon"></i> Share <span class="share-count"></span>
-        </button>
-    </div>
-</div>
-
-</div>
-
+<script src="../JS/info.js" defer></script>
+<script src="../JS/postInfo.js" defer></script>
 <script src="../JS/Followbtn.js" defer></script>
 <script src="../JS/post.js" defer></script>
 <script src="../JS/LCS.js" defer></script>
+<script src="../JS/hamburger.js" defer></script>
 </body>
 </html>

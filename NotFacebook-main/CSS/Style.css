@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* ----------- Navbar --------- */
-
 * {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -381,41 +378,76 @@ textarea.input-box {
     display: flex;
     flex-direction: column;
 }
-body {
-    font-family: Arial, sans-serif;
-}
-
-.dropdown-label {
-    position: relative;
-    display: inline-block;
+.hamburger-menu {
     cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.dropdown-label:hover .dropdown-content {
-    display: block;
+.hamburger-menu .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    
 }
-
-.dropdown-content {
+.hamburger-menu .line:hover{
+    background-color: white;
+}
+.hidden {
     display: none;
+}
+
+#menu {
     position: absolute;
+    top: 50px; 
+    left: 0;
     background-color: white;
     border: 1px solid #ccc;
-    min-width: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    border-radius: 5px;
+    width: 150px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+#menu ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
 }
 
-.dropdown-content a {
-    color: black;
+#menu ul li {
+    margin: 10px 0; 
+}
+
+#menu ul li a {
     text-decoration: none;
-    display: block;
-    padding: 8px 12px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.dropdown-content a:hover {
+#menu ul li a:hover {
     background-color: #f0f0f0;
+    border-radius: 5px;
 }
+.ntsako img{
+    display: block; 
+    margin: 0 auto 10px; 
+    width: 100px; 
+    height: auto; 
+    border-radius: 50%;
 
+}
+.ntsako b{
+    text-align: center; 
+    font-size: 16px;
+    margin: 0; 
+    color: #333;
+    margin-left: 50px;
+}
 @media only screen and (max-width: 700px) {
     ul {
         flex-direction: column;

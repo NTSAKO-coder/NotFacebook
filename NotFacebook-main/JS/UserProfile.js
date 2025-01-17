@@ -1,8 +1,3 @@
-function showProfile() {
-    const profileSection = document.getElementById('profile-section');
-    profileSection.style.display = 'block';
-}
-function hideProfile() {
-    const profileSection = document.getElementById('profile-section');
-    profileSection.style.display = 'none';
+function navigateToProfile() {
+    window.location.href = "http://127.0.0.1:5500/NotFacebook-main/HTML/UserProfile.html";
 }
